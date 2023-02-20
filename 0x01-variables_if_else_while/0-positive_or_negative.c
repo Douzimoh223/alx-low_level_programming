@@ -1,19 +1,28 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
+/**
+ *  main - Entry point
+ *
+ *Return: Always 0 (Succes)
+ */
 int main(void)
 {
-int n = 10;
-if (n > 0)/* Condition = n is positive */
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+/* your code goes there */
+if (n > 0)
 {
-printf("is positive: %d\n", n);
+printf("%d is positive\n", n);
 }
-if (n == 0)/* Condition = True  n is zero */
+if (n < 0)
 {
-printf("is zero: %d\n", n);
+printf("%d is negative\n", n);
 }
-if (n > 0)/* Bool is True n is negative */
+if (n == 0)
 {
-printf("is negative: %d\n", n);
+printf("%d is zero\n", n);
 }
-return (0);
+	return (0);
 }
