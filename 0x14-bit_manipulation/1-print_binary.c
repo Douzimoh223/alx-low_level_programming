@@ -3,13 +3,23 @@
  * print_binary -  a function that prints
  * the binary representation of a number
  * @n :pointer of print the binary
- * Return: result
  */
 void print_binary(unsigned long int n)
 {
-if (n > 1)
+int i, x = 0;
+unsigned long int result;
+for (i = 63; i >= 0; i--)
 {
-print_binary(n  >> 1);
+result = n >> i;
+
+if (result & 1)
+{
+_putchar('1');
+x++;
 }
-return void(print_binary(unsigned long int n));
+else if (x)
+_putchar('0');
+}
+if (!x)
+_putchar('0');
 }
