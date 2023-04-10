@@ -3,8 +3,8 @@
  * create_file - a fonction creates a file
  * @filename: pointeur to name of file create
  * @text_content: ponteur to a string  to write of file
- * Return: if fonction fail -1,
- * On succes -- 1
+ * Return: if fonction fail --1,
+ * Otherwise - 1
  */
 int create_file(const char *filename, char *text_content)
 {
