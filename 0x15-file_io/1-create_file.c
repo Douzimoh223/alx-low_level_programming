@@ -2,7 +2,7 @@
 /**
  * create_file - a fonction creates a file
  * @filename: pointeur to name of file create
- * @text_content: ponteur to a string  to write of file
+ * @text_content: pointeur to a string  to write of file
  * Return: if fonction fail --1,
  * Otherwise - 1
  */
@@ -25,6 +25,3 @@ return (-1);
 close(fd);
 return (-1);
 }
-
-
-
